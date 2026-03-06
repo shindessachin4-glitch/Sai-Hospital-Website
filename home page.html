@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sai Hospital</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        .header {
+            padding: 50px;
+            background-image: url("header4.png");
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            color: #F0F8FF;
+            font-size: 40px;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #002D62;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: #F0F8FF;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: white;
+            color: #218838;
+            border-radius: 5px;
+        }
+
+        .navbar .right {
+            margin-left: auto;
+        }
+
+        /* Marquee */
+        marquee {
+            background-color: #002D62;
+            color: white;
+            padding: 5px;
+        }
+
+        /* About Section */
+        .about-section {
+            text-align: center;
+            padding: 20px;
+            background-image: url("hop.png");
+        }
+
+        .about-section h1 {
+            color: #218838;
+        }
+
+        /* Flexbox Layout */
+        .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+.flex-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0076CE;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.flex-container > div:hover {
+    background-color: #002D62;
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+.flex-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 150px; /* Center text */
+}
+
+.flex-container a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container > div {
+        width: 80%;
+        height: 120px;
+    }
+}
+
+
+        /* Team Section */
+        .team {
+            background: #5694ce;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .team img {
+            width: 50%;
+            border-radius: 50%;
+        }
+
+        .container {
+            background: #F0F8FF;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .button {
+            border: none;
+            border-radius: 12px;
+            padding: 10px;
+            color: white;
+            background-color: #28a745;
+            cursor: pointer;
+            width: 80%;
+        }
+
+        .button:hover {
+            background-color: #218838;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            background-color: #002D62;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .flex-container > div {
+                width: 80%;
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <marquee>🚑 Sai Hospital, Health is Wealth..!</marquee>
+
+    <div class="navbar">
+        <a href="index.php">🏠 Home</a>
+        <a href="profile.php">👤 Profile</a>
+        <a href="contact1.html">📞 Contact Us</a>
+        <a href="appointment.php">📅 Book Appointment</a>
+        <a href="add_treatment.php">🩺 OPD</a>
+        <a href="admission.php">🏥 Admission</a>
+        <a href="login.php" class="right">🔑 Login</a>
+        <a href="signup.php" class="right">📝 Signup</a>
+    </div>
+
+    <div class="header">
+        <h1>Sai Hospital</h1>
+        <p>Treating the patients, save the life</p>
+        <p>- A website by Sai H</p>
+        <p><a href="contact1.html"><button class="button">Learn More</button></a></p>
+    </div>
+
+    <div class="about-section">
+        <h1>Sai Hospital</h1>
+        <p>Sai foundation doing social service to public.</p>
+        <h2>Follow the Treatment and Avoid the Pain !!</h2>
+    </div>
+
+    <div class="team">
+        <marquee>🚑 OUR TEAM 👨‍⚕️</marquee>
+        <div class="row">
+            <div class="container">
+                <img src="aniket.jpg" alt="Wagh"
+                <h2>Dr.Wagh</h2>
+                <p class="title">MHMS</p>
+                <p>Passout in 2025 Batch.</p>
+                <p><a href="appointment.php"><button class="button">Book Appointment</button></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>Hospital Modules</h2>
+        <div class="flex-container">    
+            <div><a href="appointment.php">📅 Book Appointment</a></div>
+            <div><a href="signup.php">📝 Sign Up</a></div>    
+            <div><a href="admission.php">🏥 Admission</a></div>    
+            <div><a href="profile.php">👤 Profile</a></div>
+            <div><a href="contact1.html">🚨 Emergency</a></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <marquee>🚑 Sai Hospital, Ranjani</marquee>
+        <p>📞 Contact: 9322722405 | 📩 Email: wagh@gmail.com</p>
+    </div>
+
+</body>
+</html>

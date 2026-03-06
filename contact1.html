@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Sai Railway Reservation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"> <!-- Optional if you're using global styles -->
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+        }
+
+        .contact-header {
+            background-color: #002D62;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact-header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .contact-container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        .contact-container h2 {
+            margin-bottom: 20px;
+            color: #002D62;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: #002D62;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .contact-info p {
+            margin: 8px 0;
+        }
+
+        @media (max-width: 600px) {
+            .contact-header h1 {
+                font-size: 26px;
+            }
+
+            .contact-container {
+                padding: 20px;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-header">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you. Reach out with any queries!</p>
+    </div>
+
+    <div class="contact-container">
+        <h2>Send a Message</h2>
+        <form action="send-contact.php" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>📍 Our Hospital</h3>
+            <p>Sai Railway HQ, Central Rail Building, City Station</p>
+            <p>📞 Phone: +91-999-888-7777</p>
+            <p>📧 Email: support@sai railway.in</p>
+        </div>
+    </div>
+
+</body>
+</html>
